@@ -1,0 +1,187 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100%;
+}
+
+.blue {
+    background-color: #EBEBEB;
+    height: 100px;
+}
+
+.red {
+    background-color: #262522;
+}
+
+.green {
+    background-color: #262522;
+}
+
+.purple {
+    background-color: #EBEBEB;
+    height: 600px;
+}
+
+.yellow {
+    background-color: #EBEBEB;
+    height: 600px;
+    text-align: center;
+}
+
+.purple img {
+    float: left;
+    margin-right: 20px;
+}
+
+body {
+    background-color: #404046;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.brand {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin: 2px 0 14px 5%;
+}
+
+.brand .firstname {
+    font-weight: lighter;
+    color: #BCBCBC;
+}
+
+.brand .secondname {
+    font-weight: bolder;
+    color: #F4F6F5;
+}
+
+.link {
+    color: #BCBCBC;
+    margin: 0px auto 0 auto;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    text-align: center;
+    float: left;
+    width: 33%;
+}
+
+.about {
+    font-size: 1.5em;
+}
+
+.my-photo {
+    float: left;
+}
+
+.main-content {
+    margin: 20px 0 20px 20px;
+}
+
+.photo-content {
+    margin: 20px 0 20px 0;
+}
+
+.inner-main-content {
+    padding-right: 20px;
+    text-align: center;
+}
+
+.section-header {
+    font-size: 2.2em;
+}
+
+@media screen and (min-width : 700px) {
+    .yellow {
+        width: 25%;
+    }
+
+    .red {
+        width: 30%;
+    }
+
+    .green {
+        width: 70%;
+    }
+
+    .purple {
+        width: 50%;
+    }
+
+    .blue {
+        width: 25%;
+        height: 600px;
+    }
+
+    .main-content {
+        border-right: 2px solid #BCBCBC;
+    }
+
+    .container {
+        width: 80%;
+        margin: 40px auto 0 auto;
+    }
+
+    .inner-main-content {
+        text-align: left;
+    }
+
+    .section-header {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .purple {
+        width: 67%;
+    }
+
+    .blue {
+        width: 100%;
+        height: 200px;
+        border-top: 2px solid #BCBCBC;
+        padding-left: 10px;
+        background-color: #F4F6F5;
+    }
+
+    .yellow {
+        width: 33%;
+    }
+
+    .main-content {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .purple {
+        width: 100%;
+        height: 350px;
+    }
+
+    .yellow {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .section-header {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .section-header {
+        font-size: 1.4em;
+    }
+}

@@ -1,0 +1,153 @@
+body {
+    background-color: #404046;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.header1 {
+    background-color: #262522;
+    height: 82px;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto 30px auto;
+}
+
+.brand {
+    width: 30%;
+    float: left;
+    color: white;
+    font-size: 3em;
+    margin: 2px 0 14px 5%;
+}
+
+.brand .firstname {
+    font-weight: lighter;
+    color: #BCBCBC;
+}
+
+.brand .secondname {
+    font-weight: bolder;
+    color: #F4F6F5;
+}
+
+.link {
+    color: #BCBCBC;
+    float: right;
+    width: 15%;
+    margin: 0px auto 0 auto;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 28px;
+    text-align: center;
+}
+
+.link:hover {
+    background-color: #12110F;
+    color: #F4F6F5;
+    cursor: pointer;
+}
+
+.content {
+    height: 400px;
+    background-color: #EBEBEB;
+    padding: 40px;
+}
+
+.menu-toggle {
+    font-size: 36px;
+    color: #F4F6F5;
+    float: right;
+    margin: 16px 5px 10px 10px;
+    display: none;
+}
+
+.clear {
+    clear: both;
+    background-color: #262522;
+}
+
+.hamburger-menu {
+    width: 100px;
+    float: right;
+    background-color: #262522;
+    font-size: 1.3em;
+    padding-left: 10px;
+    text-align: left;
+    display: none;
+    padding-bottom: 5px;
+}
+
+.hamburger-menu a {
+    font-size: 1.5em;
+}
+
+.hide-element {
+    display: none;
+}
+
+.show-element {
+    display: block;
+}
+
+.my-photo {
+    float: left;
+    margin-right: 40px;
+}
+
+.side-content {
+    float: left;
+    font-size: 1.5em;
+}
+
+.content {
+    padding: 40px;
+}
+
+.section-header {
+    font-size: 3em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.main-content {
+    border-right: 2px solid #BCBCBC;
+    /*width: 75%;*/
+    float: left;
+}
+
+.about {
+    font-size: 1.5em;
+    padding-right: 10px;
+    float: left;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:link {
+    color: #BCBCBC;
+}
+
+a:visited {
+    color: #BCBCBC;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
