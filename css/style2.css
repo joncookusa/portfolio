@@ -1,39 +1,66 @@
 .container {
     display: flex;
     flex-wrap: wrap;
+    border-style: outset;
+    border-width: 3px;
+    border-color: white;
 }
 
 .box {
     width: 100%;
 }
 
-.blue {
+.side-section {
     background-color: #EBEBEB;
     height: 100px;
 }
 
-.red {
+.logo-section {
     background-color: #262522;
 }
 
-.green {
+.header-section {
     background-color: #262522;
 }
 
-.purple {
+.main-section {
     background-color: #EBEBEB;
     height: 600px;
 }
 
-.yellow {
+.photo-section {
     background-color: #EBEBEB;
     height: 600px;
     text-align: center;
 }
 
-.purple img {
+.main-section img {
     float: left;
     margin-right: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+button {
+    background-color: #0684B1;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    font-size: 0.8em;
+    text-align: left;
+    color: white;
+    padding-left: 10px;
+}
+
+.twitter {
+    background-color: #38C5F5;
+}
+
+.email {
+    background-color: #FF4704;
 }
 
 body {
@@ -66,7 +93,13 @@ body {
     padding-bottom: 28px;
     text-align: center;
     float: left;
-    width: 33%;
+    width: 33.333%;
+}
+
+.link:hover {
+    background-color: #12110F;
+    color: #F4F6F5;
+    cursor: pointer;
 }
 
 .about {
@@ -79,6 +112,10 @@ body {
 
 .main-content {
     margin: 20px 0 20px 20px;
+}
+
+.side-content {
+    margin: 20px 20px 20px 20px;
 }
 
 .photo-content {
@@ -95,23 +132,23 @@ body {
 }
 
 @media screen and (min-width : 700px) {
-    .yellow {
+    .photo-section {
         width: 25%;
     }
 
-    .red {
+    .logo-section {
         width: 30%;
     }
 
-    .green {
+    .nav-section {
         width: 70%;
     }
 
-    .purple {
+    .main-section {
         width: 50%;
     }
 
-    .blue {
+    .side-section {
         width: 25%;
         height: 600px;
     }
@@ -135,20 +172,23 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .purple {
+    .main-section {
         width: 67%;
+        height: 450px;
     }
 
-    .blue {
+    .side-section {
         width: 100%;
         height: 200px;
         border-top: 2px solid #BCBCBC;
         padding-left: 10px;
-        background-color: #F4F6F5;
+        background-color: #D2D3D4;
+        text-align: center;
     }
 
-    .yellow {
+    .photo-section {
         width: 33%;
+        height: 450px;
     }
 
     .main-content {
@@ -157,12 +197,12 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-    .purple {
+    .main-section {
         width: 100%;
-        height: 350px;
+        height: 380px;
     }
 
-    .yellow {
+    .photo-section {
         width: 100%;
         height: 300px;
     }
@@ -174,14 +214,32 @@ body {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .main-section {
+        height: 440px;
+    }
+}
+
 @media screen and (max-width: 460px) {
     .section-header {
         font-size: 1.8em;
+    }
+
+    .main-section {
+        height: 500px;
+    }
+
+    .side-section {
+        height: 300px;
     }
 }
 
 @media screen and (max-width: 385px) {
     .section-header {
         font-size: 1.4em;
+    }
+
+    .main-section {
+        height: 550px;
     }
 }
