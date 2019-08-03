@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background: #ffffff url(../img/geometry2.png); !* Background pattern from Subtle Patterns *!*/
+    font-family: "Coda", cursive;
+    background-color: palegoldenrod;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 640px;
+    max-width: 100%;
+    /*min-height: 680px;*/
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 22%;
+    background: #2e3d49;
+    font-size: 0;
+    color: #2e3d49;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    transition: 0.25s;
+    margin-bottom: 10px;
+}
+
+.deck .card.open {
+    transform: rotateY(180deg);
+    background: #02b3e4;
+}
+
+.deck .card.show {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 48px;
+    pointer-events: none;
+}
+
+.deck .card.nomatch {
+    background: orangered;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 320px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.congratulations-page {
+    width: 640px;
+    min-height: 680px;
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+    text-align: center;
+}
+
+.result {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.congratulations-page button {
+    background: #02ccba;
+    min-height: 32px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .deck .card {
+        height: 100px;
+    }
+    .deck .card.show {
+        font-size: 36px;
+    }
+    .deck .card.match {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .deck .card {
+        height: 75px;
+    }
+    .deck .card.show {
+        font-size: 28px;
+    }
+    .deck .card.match {
+        font-size: 28px;
+    }
+
+}
