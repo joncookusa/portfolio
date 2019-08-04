@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="../css/arcade-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="click-to-start">Click a character below to begin</h1>
+    <h1 class="game-on">Game On!</h1>
+    <span class="characters">
+        <img src="../images/char-boy-small.png" data-name="../images/char-boy.png" alt="boy character">
+        <img src="../images/char-cat-girl-small.png" data-name="../images/char-cat-girl.png" alt="cat girl character">
+        <img src="../images/char-horn-girl-small.png" data-name="../images/char-horn-girl.png" alt="horn girl character">
+        <img src="../images/char-pink-girl-small.png" data-name="../images/char-pink-girl.png" alt="pink girl character">
+        <img src="../images/char-princess-girl-small.png" data-name="../images/char-princess-girl.png" alt="princess girl character">
+    </span>
+    <p>Navigate your player across the paved road and avoid the enemy lady bugs. If you collide with a lady bug you will lose one of your three lives.
+        To score a point, pick up an orange gem stone en route. </p>
+    <p>The gem stones will vaporize if a lady bug collides with them,
+        so be quick and grab the gem stone while you have the chance. You have 60 seconds to score as may points as you can.
+    </p>
+    <div class="container">
+        <hr>
+        <div class="game-info">
+            <div class="column lives-remaining">
+                Lives remaining : 3
+            </div>
+            <div class="column score">
+                Score : 0
+            </div>
+            <div class="column time">
+                Time left : 60
+            </div>
+        </div>
+        <div class="game-over">
+            Game Over. You scored 0 points
+        </div>
+        <div class="canvas">
+            <script src="../js/resources.js"></script>
+            <script src="../js/app-arcade.js"></script>
+            <script src="../js/engine.js"></script>
+        </div>
+    </div>
+</body>
+</html>

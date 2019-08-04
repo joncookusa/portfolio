@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    background-color: #BCBCBC;
+}
+
+.container {
+    width: 505px;
+    margin: 20px auto 0 auto;
+    text-align: left;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.canvas {
+    clear: left;
+}
+
+.game-over {
+    text-align: center;
+    color: red;
+}
+
+.click-to-start {
+    color: black;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+.game-on {
+    color: red;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 20px auto 0 auto;
+    width: 800px;
+}
+
+@keyframes blink {
+    to { color: red; }
+}
+
+
+

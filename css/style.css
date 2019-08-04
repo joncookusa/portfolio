@@ -53,12 +53,27 @@
     background-color: #BCBCBC;
     width: 50%;
     height: 500px;
+}
+
+.restaurant-review-section {
+    background-color: #F6F6F6;
+    width: 50%;
+    height: 500px;
+}
+
+.fee-reader-section {
+    background-color: lightgray;
+    width: 50%;
     height: 500px;
 }
 
 .box-content {
-    padding-top: 20px;
+    padding: 20px 20px 0 20px;
     text-align: center;
+}
+
+.padding-10 {
+    padding: 10px;
 }
 
 .arcade-game-section img {
@@ -98,6 +113,10 @@ button {
     float: left;
 }
 
+.portfolio-verbage p {
+    margin-left: 20px;
+}
+
 .portfolio-verbage {
     width: 50%;
     float: left;
@@ -107,6 +126,12 @@ button {
 
 .portfolio-box-footer {
     clear: left;
+    margin: 0 20px 0 20px;
+}
+
+.portfolio-image-content {
+    width: 50%;
+    float: left;
 }
 
 body {
@@ -238,6 +263,17 @@ img {
 }
 
 @media screen and (max-width: 900px) {
+    .portfolio-image {
+        width: 100%;
+    }
+    .portfolio-verbage {
+        width: 90%;
+        height: 170px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
     .main-section {
         width: 67%;
         height: 450px;
@@ -260,6 +296,22 @@ img {
     .main-content {
         border: none;
     }
+
+    .arcade-game-section {
+        height: 650px;
+    }
+
+    .mind-game-section {
+        height: 650px;
+    }
+
+    .fee-reader-section {
+        height: 650px;
+    }
+
+    .restaurant-review-section {
+        height: 650px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -272,6 +324,43 @@ img {
         width: 100%;
         height: 300px;
     }
+
+    .portfolio-verbage {
+        width: 50%;
+        float: left;
+        margin: 0;
+        text-align: left;
+    }
+
+    .portfolio-image {
+        width: 50%;
+        float: left;
+    }
+
+    .arcade-game-section {
+        width: 100%;
+        height: 500px;
+    }
+
+    .mind-game-section {
+        width: 100%;
+        height: 500px;
+    }
+
+    .fee-reader-section {
+        width: 100%;
+        height: 500px;
+    }
+
+    .restaurant-review-section {
+        width: 100%;
+        height: 500px;
+    }
+
+    .portfolio-box-footer {
+        height: 150px;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -307,5 +396,27 @@ img {
 
     .main-section {
         height: 550px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mind-game-section {
+        height: 650px;
+    }
+    .arcade-game-section {
+        height: 650px;
+    }
+    .fee-reader-section {
+        height: 650px;
+    }
+    .restaurant-review-section {
+        height: 650px ;
+    }
+    .portfolio-image {
+             width: 100%;
+         }
+    .portfolio-verbage {
+        width: 100%;
+        text-align: center;
     }
 }
