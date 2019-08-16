@@ -43,6 +43,13 @@
     text-align: center;
 }
 
+.place-holder-box {
+    width: 100%;
+    background-color: #F4F6F5;
+    height: 560px;
+    padding: 20px;
+}
+
 .mind-game-section {
     background-color: #EBEBEB;
     width: 50%;
