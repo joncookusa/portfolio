@@ -10,7 +10,7 @@ interface as the screen size changes.
 
 Currently there are three tabs. Home, portfolio and blog. The portfolio tab showcase various working projects and incorporates 
 links to the github repositories. 
-###Installing
+### Installing
 To install the Portfolio Project, you will need to ensure that git is installed on your computer. If you don't have git, follow the instructions at...
 
     https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
@@ -19,5 +19,5 @@ Once git is installed, open a command line or terminal window and navigate to a 
     git clone https://github.com/joncookusa/portfolio.git
 Once the project has been copied to your install folder, simply open the index.html file to view the portfolio app.
 
-###Dependencies
+### Dependencies
 This project is built using HTML5 and CSS. The associated portfolio items may have additional dependencies.
