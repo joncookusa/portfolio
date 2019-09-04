@@ -17,6 +17,11 @@
 
 .logo-section {
     background-color: #262522;
+    width: 33%;
+}
+
+.nav-section {
+    width: 67%;
 }
 
 .header-section {
@@ -54,6 +59,12 @@
     background-color: #EBEBEB;
     width: 50%;
     height: 500px;
+}
+
+.cert {
+    width: 50%;
+    background-color: #EBEBEB;
+    min-height: 600px;
 }
 
 .arcade-game-section {
@@ -111,6 +122,13 @@ button {
 .portfolio-title {
     width: 100%;
     font-size: 2em;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.skills-title {
+    width: 100%;
+    font-size: 1.4em;
     font-weight: bolder;
     padding-bottom: 5px;
 }
@@ -220,6 +238,10 @@ nav a {
     font-size: 2.2em;
 }
 
+.skills {
+    margin-bottom: 50px;
+}
+
 button:focus {
     outline: none;
 }
@@ -232,14 +254,6 @@ img {
 @media screen and (min-width : 700px) {
     .photo-section {
         width: 25%;
-    }
-
-    .logo-section {
-        width: 30%;
-    }
-
-    .nav-section {
-        width: 70%;
     }
 
     .main-section {
@@ -266,6 +280,10 @@ img {
 
     .section-header {
         font-size: 2.2em;
+    }
+
+    .cert {
+        width: 50%;
     }
 }
 
@@ -321,10 +339,54 @@ img {
     }
 }
 
+@media screen and (max-width: 1350px) {
+    .logo-section {
+        width: 37%;
+    }
+
+    .nav-section {
+        width: 63%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .logo-section {
+        width: 45%;
+    }
+
+    .nav-section {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo-section {
+        width: 50%;
+    }
+
+    .nav-section {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .main-section {
         width: 100%;
         height: 380px;
+    }
+
+    .logo-section {
+        width: 100%;
+    }
+
+    .nav-section {
+        width: 100%;
     }
 
     .photo-section {
@@ -368,19 +430,43 @@ img {
         height: 150px;
     }
 
+    .cert {
+        width: 100%;
+        min-height: 0;
+    }
+
 }
 
-@media screen and (max-width: 1200px) {
-    .container {
-        width: 100%;
-    }
-}
+
 
 @media screen and (max-width: 550px) {
     .main-section {
         height: 440px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .mind-game-section {
+        height: 650px;
+    }
+    .arcade-game-section {
+        height: 650px;
+    }
+    .fee-reader-section {
+        height: 650px;
+    }
+    .restaurant-review-section {
+        height: 650px ;
+    }
+    .portfolio-image {
+        width: 100%;
+    }
+    .portfolio-verbage {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width: 460px) {
     .section-header {
@@ -403,27 +489,5 @@ img {
 
     .main-section {
         height: 550px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .mind-game-section {
-        height: 650px;
-    }
-    .arcade-game-section {
-        height: 650px;
-    }
-    .fee-reader-section {
-        height: 650px;
-    }
-    .restaurant-review-section {
-        height: 650px ;
-    }
-    .portfolio-image {
-             width: 100%;
-         }
-    .portfolio-verbage {
-        width: 100%;
-        text-align: center;
     }
 }
