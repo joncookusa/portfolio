@@ -490,4 +490,18 @@ img {
     .main-section {
         height: 550px;
     }
+
+    .brand {
+        font-size: 2.5em;
+    }
+
+    .portfolio-verbage {
+        height: 220px;
+    }
+
+    .portfolio-title {
+        font-size: 1.4em;
+    }
+
+
 }
